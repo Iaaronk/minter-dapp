@@ -7,21 +7,116 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "YOUR COLLECTION NAME";
-const description = "Remember to replace this description";
+const namePrefix = "The Noir Agency";
+const description = "A community celebrating Black Culture, Fashion, Excellence, and Inclusion. United by a first-of-its-kind collection featuring 2,500 artworks of diverse Black Secret Agents.Created and Illustrated by Aaron Kelly (@iaaronk)";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 500,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Agent 001" },
+      { name: "Eye color 001" },
+      { name: "Outfit 001" },
+      { name: "Hair 001" },
+      
+    ],
+  },
+  {
+    growEditionSizeTo: 1000,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Agent 002" },
+      { name: "Eye color 002" },
+      { name: "Outfit 002" },
+      { name: "Hair 002" },
+      
+    ],
+  },
+  {
+    growEditionSizeTo: 1500,
+    layersOrder: [
+      
+      { name: "Background" },
+      { name: "Agent 003" },
+      { name: "Eye color 003" },
+      { name: "Outfit 003" },
+      { name: "Hair 003" },
+      { name: "Beard 003" },
+      
+    ],
+  },
+  {
+    growEditionSizeTo: 2000,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Agent 004" },
+      { name: "Eye color 004" },
+      { name: "Outfit 004" },
+      { name: "Hair 004" },
+      
+
+    ],
+  },
+
+  {
+    growEditionSizeTo: 2125,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Agent 001" },
+      { name: "Eye color 001" },
+      { name: "Gala 001" },
+      { name: "Hair 001" },
+      { name: "Accessories 001" },
+
+    ],
+  },{
+    growEditionSizeTo: 2125,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Agent 001" },
+      { name: "Eye color 001" },
+      { name: "Gala 001" },
+      { name: "Hair 001" },
+      { name: "Accessories 001" },
+
+    ],
+  },
+  
+{
+    growEditionSizeTo: 2250,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Agent 002" },
+      { name: "Eye color 002" },
+      { name: "Gala 002" },
+      { name: "Hair 002" },
+      { name: "Accessories 002" },
+
+    ],
+  },
+  {
+    growEditionSizeTo: 2375,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Agent 003" },
+      { name: "Eye color 003" },
+      { name: "Gala 003" },
+      { name: "Hair 003" },
+      { name: "Beard 003" },
+    ],
+  },
+  {
+    growEditionSizeTo: 2500,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Agent 004" },
+      { name: "Eye color 004" },
+      { name: "Gala 004" },
+      { name: "Hair 004" },
+      { name: "Accessories 004" },
+
     ],
   },
 ];
@@ -37,7 +132,7 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://www.thenoiragency.io", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -48,22 +143,22 @@ const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'rinkeby'; // only rinkeby, polygon, or ethereum
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'CRYPTOPUNKS';
-const CONTRACT_SYMBOL = 'CP';
+const CONTRACT_NAME = 'The Noir Agency';
+const CONTRACT_SYMBOL = 'TNA';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
-const OWNER_ADDRESS = 'YOUR WALLET ADDRESS HERE';
-const TREASURY_ADDRESS = 'YOUR WALLET ADDRESS HERE';
-const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const OWNER_ADDRESS = '0x1ebC8c6C5C5A00Cc7A7bAa038598BC5E024e98E1';
+const TREASURY_ADDRESS = '0x1ebC8c6C5C5A00Cc7A7bAa038598BC5E024e98E1';
+const MAX_SUPPLY = 2500; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 0.01; // Minting price per NFT. Rinkeby = ETH, Ethereum = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-03-20T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-08-30T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
-const ROYALTY_ADDRESS = "0xd8B808A887326F45B2D0cd999709Aa6264CeF919"; // Address that will receive the royalty
+const ROYALTY_ADDRESS = "0x1ebC8c6C5C5A00Cc7A7bAa038598BC5E024e98E1"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
 const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
@@ -73,9 +168,9 @@ let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually inclu
 
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
-const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
-const GENERIC_DESCRIPTION = "REPLACE THIS"; // Replace with what you want the generic descriptions to say.
-const GENERIC_IMAGE = "https://ipfs.io/ipfs/QmUf9tDbkqnfHkQaMdFWSGAeXwVXWA61pFED7ypx4hcsfh"; // Replace with your generic image that will display for all NFTs pre-reveal.
+const GENERIC_TITLE = "Hidden Agent"; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
+const GENERIC_DESCRIPTION = "The Noir Agency 2500 elite agents coming soon"; // Replace with what you want the generic descriptions to say.
+const GENERIC_IMAGE = "https://ipfs.io/ipfs/bafkreie36adwux5ift2j5yei2lirv7ei7e7xof2eesacevyymzfenyqqn4"; // Replace with your generic image that will display for all NFTs pre-reveal.
 
 // Automatically set contract address if deployed using the deployContract.js script
 try {
