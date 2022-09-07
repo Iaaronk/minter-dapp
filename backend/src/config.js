@@ -6,24 +6,120 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "YOUR COLLECTION NAME";
+const namePrefix = "The Noir Agency";
 const description = "Remember to replace this description";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 const layerConfigurations = [
+
+    {
+      growEditionSizeTo: 500,
+      layersOrder: [
+        { name: "Background" },
+        { name: "Agent 001" },
+        { name: "Eye color 001" },
+        { name: "Outfit 001" },
+        { name: "Hair 001" },
+        
+      ],
+    },
+    {
+      growEditionSizeTo: 1000,
+      layersOrder: [
+        { name: "Background" },
+        { name: "Agent 002" },
+        { name: "Eye color 002" },
+        { name: "Outfit 002" },
+        { name: "Hair 002" },
+        
+      ],
+    },
+    {
+      growEditionSizeTo: 1500,
+      layersOrder: [
+        
+        { name: "Background" },
+        { name: "Agent 003" },
+        { name: "Eye color 003" },
+        { name: "Outfit 003" },
+        { name: "Hair 003" },
+        { name: "Beard 003" },
+        
+      ],
+    },
+    {
+      growEditionSizeTo: 2000,
+      layersOrder: [
+        { name: "Background" },
+        { name: "Agent 004" },
+        { name: "Eye color 004" },
+        { name: "Outfit 004" },
+        { name: "Hair 004" },
+        
+  
+      ],
+    },
+  
+    {
+      growEditionSizeTo: 2125,
+      layersOrder: [
+        { name: "Background" },
+        { name: "Agent 001" },
+        { name: "Eye color 001" },
+        { name: "Gala 001" },
+        { name: "Hair 001" },
+        { name: "Accessories 001" },
+  
+      ],
+    },{
+      growEditionSizeTo: 2125,
+      layersOrder: [
+        { name: "Background" },
+        { name: "Agent 001" },
+        { name: "Eye color 001" },
+        { name: "Gala 001" },
+        { name: "Hair 001" },
+        { name: "Accessories 001" },
+  
+      ],
+    },
+    
   {
-    growEditionSizeTo: 5,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
-    ],
-  },
-];
+      growEditionSizeTo: 2250,
+      layersOrder: [
+        { name: "Background" },
+        { name: "Agent 002" },
+        { name: "Eye color 002" },
+        { name: "Gala 002" },
+        { name: "Hair 002" },
+        { name: "Accessories 002" },
+  
+      ],
+    },
+    {
+      growEditionSizeTo: 2375,
+      layersOrder: [
+        { name: "Background" },
+        { name: "Agent 003" },
+        { name: "Eye color 003" },
+        { name: "Gala 003" },
+        { name: "Hair 003" },
+        { name: "Beard 003" },
+      ],
+    },
+    {
+      growEditionSizeTo: 2500,
+      layersOrder: [
+        { name: "Background" },
+        { name: "Agent 004" },
+        { name: "Eye color 004" },
+        { name: "Gala 004" },
+        { name: "Hair 004" },
+        { name: "Accessories 004" },
+  
+      ],
+    },
+  ];
 
 const shuffleLayerConfigurations = false;
 
