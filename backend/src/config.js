@@ -171,6 +171,7 @@ const GENERIC = true; // Set to true if you want to upload generic metas and rev
 const GENERIC_TITLE = "Hidden Agents"; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
 const GENERIC_DESCRIPTION = "The Noir Agency coming soon"; // Replace with what you want the generic descriptions to say.
 const GENERIC_IMAGE = "https://ipfs.io/ipfs/bafkreie36adwux5ift2j5yei2lirv7ei7e7xof2eesacevyymzfenyqqn4"; // Replace with your generic image that will display for all NFTs pre-reveal.
+const REVEAL_PROMPT = true; // Set to false if you want to disable the prompt to confirm each reveal.
 const INTERVAL = 900000; // Milliseconds. This is the interval for it to check for sales and reveal the NFT. 900000 = 15 minutes.
 // Automatically set contract address if deployed using the deployContract.js script
 try {
