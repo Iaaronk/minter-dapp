@@ -2,9 +2,23 @@ const basePath = process.cwd();
 const fs = require("fs");
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
-require('dotenv').config();
+const dotenv = require('dotenv');
+dotenv.config();
 
-;
+module.exports = {
+  version: '1.2.3',
+  canonical_url: process.env.APPLICATION_ROOT,
+  api: {
+    host: process.env.API_HOST,
+    key: process.env.API_KEY,
+    secret: process.env.API_SECRET,
+  },
+  plugins: [
+    'plugin-one',
+    'plugin.two'
+  ]
+};
+
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
