@@ -141,7 +141,7 @@ const extraMetadata = {
 
 // NFTPort Info
 // ** REQUIRED **
-const AUTH = process.env.NFTPORT_API_KEY;
+const AUTH = process.env.API_KEY;
 const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
