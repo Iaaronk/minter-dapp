@@ -149,11 +149,11 @@ const MINT_TO_ADDRESS = '0x1ebC8c6C5C5A00Cc7A7bAa038598BC5E024e98E1';
 const OWNER_ADDRESS = '0x1ebC8c6C5C5A00Cc7A7bAa038598BC5E024e98E1';
 const TREASURY_ADDRESS = '0x1ebC8c6C5C5A00Cc7A7bAa038598BC5E024e98E1';
 const MAX_SUPPLY = 2500; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 0.01; // Minting price per NFT. Rinkeby = ETH, Ethereum = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Ethereum = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-30-08T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-10-11T19:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
@@ -164,13 +164,13 @@ const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the
 const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "0xBBEF25b1A829D8884C746cE17ad8a92acBAE8660"; // If you want to manually include it
+let CONTRACT_ADDRESS = "0x9e35fbf428cc1a03aa0de0dda594d66ab881328b"; // If you want to manually include it
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = "Hidden Agents"; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
 const GENERIC_DESCRIPTION = "The Noir Agency coming soon"; // Replace with what you want the generic descriptions to say.
 const GENERIC_IMAGE = "https://ipfs.io/ipfs/bafkreie36adwux5ift2j5yei2lirv7ei7e7xof2eesacevyymzfenyqqn4"; // Replace with your generic image that will display for all NFTs pre-reveal.
-
+const INTERVAL = 900000; // Milliseconds. This is the interval for it to check for sales and reveal the NFT. 900000 = 15 minutes.
 // Automatically set contract address if deployed using the deployContract.js script
 try {
   const rawContractData = fs.readFileSync(
@@ -276,7 +276,6 @@ module.exports = {
   GENERIC_TITLE,
   GENERIC_DESCRIPTION,
   GENERIC_IMAGE,
-  INTERVAL,
   CONTRACT_NAME,
   CONTRACT_SYMBOL,
   CONTRACT_TYPE,
