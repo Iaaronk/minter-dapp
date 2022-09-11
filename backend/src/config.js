@@ -4,7 +4,7 @@ const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 require('dotenv').config();
 
-console.log(process.env.NFTPORT_API_KEY);
+;
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
