@@ -92,7 +92,7 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-
+# Ignore .env files
 .env
 .env.test
 
