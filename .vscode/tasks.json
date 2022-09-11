@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "⏬⏬⏬",
+			"path": "backend",
+			"problemMatcher": [],
+			"label": "npm: ⏬⏬⏬ - backend",
+			"detail": "FOR MAC USERS: Replace %npm_config_xyz% with $npm_config_xyz ⏬⏬⏬"
+		}
+	]
+}
