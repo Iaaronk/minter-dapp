@@ -3,7 +3,7 @@ const fs = require("fs");
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 const dotenv = require('dotenv');
-dotenv.config();
+
 
 
 
