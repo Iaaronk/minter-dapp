@@ -141,7 +141,8 @@ const extraMetadata = {
 
 // NFTPort Info
 // ** REQUIRED **
-const AUTH = process.env.API_KEY;
+//const AUTH = process.env.API_KEY;
+const AUTH = '638ab196-e830-4440-a62e-4c1fe66033ba';
 const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
@@ -150,7 +151,7 @@ const CONTRACT_NAME = 'The Noir Agency';
 const CONTRACT_SYMBOL = 'TNA';
 const CONTRACT_TYPE = 'erc721';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
-const MINT_TO_ADDRESS = 'x1ebC8c6C5C5A00Cc7A7bAa038598BC5E024e98E1'
+const MINT_TO_ADDRESS = '0x1ebC8c6C5C5A00Cc7A7bAa038598BC5E024e98E1'
 const OWNER_ADDRESS = '0x1ebC8c6C5C5A00Cc7A7bAa038598BC5E024e98E1';
 const TREASURY_ADDRESS = '0x1ebC8c6C5C5A00Cc7A7bAa038598BC5E024e98E1';
 const MAX_SUPPLY = 2500; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
