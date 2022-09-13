@@ -11,6 +11,8 @@ let {
   GENERIC,
   CONTRACT_NAME,
   CONTRACT_SYMBOL,
+  CONTRACT_TYPE,
+  MINT_TO_ADDRESS,
   METADATA_UPDATABLE,
   ROYALTY_SHARE,
   ROYALTY_ADDRESS,
@@ -35,39 +37,6 @@ const deployContract = async () => {
   if(!ok) {
     console.log("Exiting...");
     process.exit(0);
-  }
-
-  if(GENERIC) {
-    try {
-      let jsonFile = fs.readFileSync(`${basePath}/build/ipfsMetasGeneric/_ipfsMetasResponse.json`);
-      let metaData = JSON.parse(jsonFile);
-      if(metaData.response === "OK") {
-        if(!PREREVEAL_TOKEN_URI) {
-          PREREVEAL_TOKEN_URI = metaData.metadata_uri;
-        }
-      } else {
-        console.log('There is an issue with the metadata upload. Please check the /build/_ipfsMetasGeneric/_ipfsMetasResponse.json file for more information. Running "npm run upload_metadata" may fix this issue.');
-      }
-    } catch (err) {
-      console.log(`/build/_ipfsMetasGeneric/_ipfsMetasResponse.json file not found. Run "npm run upload_metadata" first.`);
-      console.log(`Catch: ${err}`);
-      process.exit(0);
-    }
-  } else {
-    try {
-      let jsonFile = fs.readFileSync(`${basePath}/build/ipfsMetas/_ipfsMetasResponse.json`);
-      let metaData = JSON.parse(jsonFile);
-      if(metaData.response === "OK") {
-        if(!BASE_URI) {
-          BASE_URI = metaData.metadata_directory_ipfs_uri;
-        }
-      } else {
-        console.log('There is an issue with the metadata upload. Please check the /build/_ipfsMetas/_ipfsMetasResponse.json file for more information. Running "npm run upload_metadata" may fix this issue.');
-      }
-    } catch (err) {
-      console.log(`/build/_ipfsMetasGeneric/_ipfsMetasResponse.json file not found. Run "npm run upload_metadata" first.`);
-      process.exit(0);
-    }
   }
 
   if (!fs.existsSync(path.join(`${basePath}/build`, "/contract"))) {
@@ -115,3 +84,4 @@ const deployContract = async () => {
 };
 
 deployContract();
+
