@@ -3,7 +3,7 @@ const path = require("path");
 const basePath = process.cwd();
 const fs = require("graceful-fs");
 const dotenv = require('dotenv');
-dotenv.config();
+
 
 module.exports = {
   version: '1.2.3',
