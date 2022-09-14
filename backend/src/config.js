@@ -136,7 +136,7 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://www.thenoiragency.io", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -300,4 +300,5 @@ module.exports = {
   BASE_URI,
   PREREVEAL_TOKEN_URI,
   PRESALE_WHITELISTED_ADDRESSES,
+  INTERVAL,
 };
