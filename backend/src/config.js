@@ -154,11 +154,11 @@ const MINT_TO_ADDRESS = "0x1ebC8c6C5C5A00Cc7A7bAa038598BC5E024e98E1";
 const OWNER_ADDRESS = "0x1ebC8c6C5C5A00Cc7A7bAa038598BC5E024e98E1";
 const TREASURY_ADDRESS = "0x1ebC8c6C5C5A00Cc7A7bAa038598BC5E024e98E1";
 const MAX_SUPPLY = 2500; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Ethereum = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const MINT_PRICE = 0.01; // Minting price per NFT. Rinkeby = ETH, Ethereum = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-10-08 09-05:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-09-27T09:30-05:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
